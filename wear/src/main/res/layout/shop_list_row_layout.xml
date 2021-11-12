@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="185dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="15dp"
+        android:background="@drawable/card_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:textColor="@color/card_text_color"
+            android:text="Premier Face Tissue"/>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/card_grey_text_color"
+                android:textSize="12sp"
+                android:text="Quantity"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="0dp" />
+            <ImageView
+                android:id="@+id/ivItemReduceCount"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:tint="@color/red"
+                android:src="@drawable/ic_remove_circle_black_24dp"/>
+            <TextView
+                android:id="@+id/tvItemQuantity"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/card_grey_text_color"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:text="100"/>
+            <ImageView
+                android:id="@+id/ivItemIncreaseCount"
+                android:layout_marginLeft="2dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:tint="@color/green"
+                android:src="@drawable/ic_add_circle_black_24dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/card_grey_text_color"
+                android:text="Unit Price:"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/card_grey_text_color"
+                android:text="@string/rs"/>
+            <TextView
+                android:id="@+id/tvItemUnitPrice"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/card_grey_text_color"
+                android:text="100"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/card_grey_text_color"
+                android:text="Discount:"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/card_grey_text_color"
+                android:text="@string/rs"/>
+            <TextView
+                android:id="@+id/tvItemDiscount"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/card_grey_text_color"
+                android:text="10"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/card_grey_text_color"
+                android:text="Net Price:"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/card_grey_text_color"
+                android:text="@string/rs"/>
+            <TextView
+                android:id="@+id/tvItemNetPrice"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/card_text_color"
+                android:text="9000"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivItemRemove"
+            android:layout_gravity="center_horizontal"
+            android:tint="@color/dark_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel_black_24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

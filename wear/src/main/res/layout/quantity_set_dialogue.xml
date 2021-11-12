@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_price"/>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvTotalNetPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <NumberPicker
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/npTotalQuantity"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+    </NumberPicker>
+
+    <ImageView
+        android:id="@+id/ivQuantitySubmit"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_circle_black_24dp"/>
+
+</LinearLayout>

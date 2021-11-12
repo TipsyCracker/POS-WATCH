@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nowfloats.smartretailer.Activities.TransactionActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+    <RelativeLayout
+        android:id="@+id/rl_connecting"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+        <ProgressBar
+            android:layout_above="@+id/ll_images_container"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/ll_images_container"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:adjustViewBounds="true"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_phone"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:adjustViewBounds="true"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_connecting"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:adjustViewBounds="true"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_scanner"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:text="@string/connecting_scanner"
+            android:layout_below="@id/ll_images_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_items"
+        android:visibility="gone"
+        android:layout_above="@+id/llConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintBottom_toTopOf="parent">
+
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/llConfirm"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/margin_10"
+        android:text="@string/confirm">
+
+    </Button>
+</LinearLayout>
+</RelativeLayout>
